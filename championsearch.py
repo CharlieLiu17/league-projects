@@ -2,6 +2,7 @@ import requests
 import json
 from googleapiclient.discovery import build
 import webbrowser
+import config
 
 def spell_switch(spell):
     return {
@@ -18,7 +19,7 @@ def store_and_print(spells, spells_parsed):
         print(num.get("name") + " cooldown:\n  " + num.get("cooldownBurn"))
         i += 1
 
-api_key = 'AIzaSyDrGbPjBfWb_Ln_8walgErB3VwsZoJwsDI'
+api_key = config.api_key
 running = True
 patch = "12.10.1" 
 champions = requests.get("http://ddragon.leagueoflegends.com/cdn/" + patch + "/data/en_US/champion.json")

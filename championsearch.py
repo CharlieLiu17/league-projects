@@ -21,7 +21,7 @@ def store_and_print(spells, spells_parsed):
 
 api_key = config.api_key
 running = True
-patch = "12.10.1" 
+patch = "12.12.1" 
 champions = requests.get("http://ddragon.leagueoflegends.com/cdn/" + patch + "/data/en_US/champion.json")
 champions.json
 

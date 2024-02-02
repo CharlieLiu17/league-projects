@@ -1,2 +1,8 @@
-google_api_python_client==2.47.0
-requests==2.25.1
+config==0.5.1
+google_api_python_client==2.116.0
+keyboard==0.13.5
+opencv_contrib_python==4.5.4.58
+opencv_python==4.5.4.58
+pyautogui==0.9.54
+pydirectinput==1.0.4
+Requests==2.31.0
